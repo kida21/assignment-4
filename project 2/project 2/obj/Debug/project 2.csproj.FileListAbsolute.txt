@@ -1,0 +1,11 @@
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\obj\Debug\project 2.csproj.AssemblyReference.cache
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\obj\Debug\project 2.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\obj\Debug\project_2.Form1.resources
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\obj\Debug\project_2.Properties.Resources.resources
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\obj\Debug\project 2.csproj.GenerateResource.cache
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\obj\Debug\project 2.csproj.CoreCompileInputs.cache
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\bin\Debug\project 2.exe.config
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\bin\Debug\project 2.exe
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\bin\Debug\project 2.pdb
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\obj\Debug\project 2.exe
+C:\Users\HP Elite BOOK\Documents\GitHub\project 2\project 2\obj\Debug\project 2.pdb
