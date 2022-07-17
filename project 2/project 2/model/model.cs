@@ -8,7 +8,8 @@ using System.Windows.Forms;
 namespace project_2.model
 {
     internal class mod
-    {
+    {  
+        public static List<mod> modList = new List<mod>();
         public string number { get; set; }
         public string date { get; set; }
         public string inventorynumber { get; set; }
@@ -17,13 +18,17 @@ namespace project_2.model
         public  string count { get; set; }
 
         public string price{ get; set; }
+       
 
         public void save()
         {
-
-            MessageBox.Show(" succesfully added");
+           modList.Add(this);
+           MessageBox.Show(" added succesfully");
         }
-
-
+        public List<mod> getallproduct() { 
+        
+            return modList;
+        
+         }
     }
 }

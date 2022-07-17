@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbl_number = new System.Windows.Forms.Label();
             this.lbl_objectname = new System.Windows.Forms.Label();
             this.lbl_inventory = new System.Windows.Forms.Label();
@@ -42,6 +43,10 @@
             this.txt_objectname = new System.Windows.Forms.TextBox();
             this.txt_count = new System.Windows.Forms.TextBox();
             this.txt_price = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_number
@@ -161,11 +166,24 @@
             this.txt_price.Size = new System.Drawing.Size(100, 20);
             this.txt_price.TabIndex = 13;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(589, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(337, 174);
+            this.dataGridView1.TabIndex = 14;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(956, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_price);
             this.Controls.Add(this.txt_count);
             this.Controls.Add(this.txt_objectname);
@@ -182,6 +200,8 @@
             this.Controls.Add(this.lbl_number);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +223,8 @@
         private System.Windows.Forms.TextBox txt_objectname;
         private System.Windows.Forms.TextBox txt_count;
         private System.Windows.Forms.TextBox txt_price;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
