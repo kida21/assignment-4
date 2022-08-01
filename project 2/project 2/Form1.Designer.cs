@@ -45,8 +45,19 @@
             this.txt_price = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.chk_avail = new System.Windows.Forms.CheckBox();
+            this.chk_option = new System.Windows.Forms.CheckedListBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rb_cbe = new System.Windows.Forms.RadioButton();
+            this.rb_telebirr = new System.Windows.Forms.RadioButton();
+            this.btn_logout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_number
@@ -178,11 +189,114 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // chk_avail
+            // 
+            this.chk_avail.AutoSize = true;
+            this.chk_avail.Location = new System.Drawing.Point(711, 204);
+            this.chk_avail.Name = "chk_avail";
+            this.chk_avail.Size = new System.Drawing.Size(72, 17);
+            this.chk_avail.TabIndex = 15;
+            this.chk_avail.Text = "availabilty";
+            this.chk_avail.UseVisualStyleBackColor = true;
+            // 
+            // chk_option
+            // 
+            this.chk_option.FormattingEnabled = true;
+            this.chk_option.Items.AddRange(new object[] {
+            "isavailable",
+            "delivery"});
+            this.chk_option.Location = new System.Drawing.Point(307, 103);
+            this.chk_option.Name = "chk_option";
+            this.chk_option.Size = new System.Drawing.Size(120, 94);
+            this.chk_option.TabIndex = 16;
+            this.chk_option.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(6, 21);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 17;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(6, 40);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.TabIndex = 18;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Location = new System.Drawing.Point(789, 183);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(137, 88);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "delivery";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rb_cbe);
+            this.groupBox2.Controls.Add(this.rb_telebirr);
+            this.groupBox2.Location = new System.Drawing.Point(640, 260);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(127, 92);
+            this.groupBox2.TabIndex = 20;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "payment ";
+            // 
+            // rb_cbe
+            // 
+            this.rb_cbe.AutoSize = true;
+            this.rb_cbe.Location = new System.Drawing.Point(17, 43);
+            this.rb_cbe.Name = "rb_cbe";
+            this.rb_cbe.Size = new System.Drawing.Size(43, 17);
+            this.rb_cbe.TabIndex = 1;
+            this.rb_cbe.TabStop = true;
+            this.rb_cbe.Text = "cbe";
+            this.rb_cbe.UseVisualStyleBackColor = true;
+            // 
+            // rb_telebirr
+            // 
+            this.rb_telebirr.AutoSize = true;
+            this.rb_telebirr.Location = new System.Drawing.Point(17, 20);
+            this.rb_telebirr.Name = "rb_telebirr";
+            this.rb_telebirr.Size = new System.Drawing.Size(56, 17);
+            this.rb_telebirr.TabIndex = 0;
+            this.rb_telebirr.TabStop = true;
+            this.rb_telebirr.Text = "telebirr";
+            this.rb_telebirr.UseVisualStyleBackColor = true;
+            // 
+            // btn_logout
+            // 
+            this.btn_logout.Location = new System.Drawing.Point(352, 372);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(75, 23);
+            this.btn_logout.TabIndex = 21;
+            this.btn_logout.Text = "logout";
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(956, 450);
+            this.Controls.Add(this.btn_logout);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.chk_option);
+            this.Controls.Add(this.chk_avail);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_price);
             this.Controls.Add(this.txt_count);
@@ -200,8 +314,13 @@
             this.Controls.Add(this.lbl_number);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,6 +344,15 @@
         private System.Windows.Forms.TextBox txt_price;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.CheckBox chk_avail;
+        private System.Windows.Forms.CheckedListBox chk_option;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rb_cbe;
+        private System.Windows.Forms.RadioButton rb_telebirr;
+        private System.Windows.Forms.Button btn_logout;
     }
 }
 

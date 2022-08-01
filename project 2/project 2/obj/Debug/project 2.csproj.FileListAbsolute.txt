@@ -20,3 +20,4 @@ C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Deb
 C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Debug\project 2.csproj.CoreCompileInputs.cache
 C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Debug\project 2.exe
 C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Debug\project 2.pdb
+C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Debug\project_2.loginform.resources

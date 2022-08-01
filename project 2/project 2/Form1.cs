@@ -13,8 +13,11 @@ namespace project_2
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
+        loginform f;
+        public Form1(loginform login)
+        {  
+            f = login;
+          
             InitializeComponent();
         }
 
@@ -71,7 +74,12 @@ namespace project_2
                 {
                     errorProvider1.SetError(txt_objectname, "");
                 }
-
+                string k = " ";
+                foreach( var mod in chk_option.CheckedItems)
+                {
+                     k+= mod.ToString();
+                }
+                MessageBox.Show(k);
             }
             else
             {
@@ -89,8 +97,33 @@ namespace project_2
                     objectname = txt_objectname.Text,
                     count = txt_count.Text,
                     price = txt_price.Text,
+                    available = chk_avail.Checked
 
                 };
+                if (rb_telebirr.Checked)
+                {
+                    mod.payment = rb_telebirr.Text;
+                }
+                else
+                {
+                    mod.payment = rb_cbe.Text;
+                }
+                int i = 0;
+                foreach(var items in chk_option.Items)
+                {
+                    if(i == 0)
+                    {
+                        if (mod.Equals(mod.isavailable)) ;
+                        else mod.isavailable = true;
+                    }
+                    else if(i== 1)
+                    {
+                        if (items.Equals(mod.delivery)) ;
+                        else mod.delivery = false;
+                    }
+                    i++;
+                }
+
                 mod.save();
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = mod.getallproduct();
@@ -101,6 +134,24 @@ namespace project_2
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            f.Show();
+
         }
     }
 }

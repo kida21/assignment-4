@@ -18,8 +18,10 @@ namespace project_2.model
         public  string count { get; set; }
 
         public string price{ get; set; }
-       
-
+        public bool available { get; set; }
+        public bool delivery { get; set; }
+        public string payment { get; set; }
+        public bool isavailable { get; set; }
         public void save()
         {
            modList.Add(this);
