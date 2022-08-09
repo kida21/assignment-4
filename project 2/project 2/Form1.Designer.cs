@@ -54,6 +54,10 @@
             this.rb_cbe = new System.Windows.Forms.RadioButton();
             this.rb_telebirr = new System.Windows.Forms.RadioButton();
             this.btn_logout = new System.Windows.Forms.Button();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.txt_search = new System.Windows.Forms.TextBox();
+            this.btn_searchnum = new System.Windows.Forms.Button();
+            this.txt_num = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -99,7 +103,7 @@
             // lbl_price
             // 
             this.lbl_price.AutoSize = true;
-            this.lbl_price.Location = new System.Drawing.Point(406, 193);
+            this.lbl_price.Location = new System.Drawing.Point(480, 193);
             this.lbl_price.Name = "lbl_price";
             this.lbl_price.Size = new System.Drawing.Size(30, 13);
             this.lbl_price.TabIndex = 4;
@@ -287,11 +291,49 @@
             this.btn_logout.UseVisualStyleBackColor = true;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
+            // btn_search
+            // 
+            this.btn_search.Location = new System.Drawing.Point(117, 303);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(75, 23);
+            this.btn_search.TabIndex = 22;
+            this.btn_search.Text = "search";
+            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            // 
+            // txt_search
+            // 
+            this.txt_search.Location = new System.Drawing.Point(12, 302);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(100, 20);
+            this.txt_search.TabIndex = 23;
+            // 
+            // btn_searchnum
+            // 
+            this.btn_searchnum.Location = new System.Drawing.Point(118, 344);
+            this.btn_searchnum.Name = "btn_searchnum";
+            this.btn_searchnum.Size = new System.Drawing.Size(75, 23);
+            this.btn_searchnum.TabIndex = 24;
+            this.btn_searchnum.Text = "searchbynum";
+            this.btn_searchnum.UseVisualStyleBackColor = true;
+            this.btn_searchnum.Click += new System.EventHandler(this.btn_searchnum_Click);
+            // 
+            // txt_num
+            // 
+            this.txt_num.Location = new System.Drawing.Point(12, 347);
+            this.txt_num.Name = "txt_num";
+            this.txt_num.Size = new System.Drawing.Size(100, 20);
+            this.txt_num.TabIndex = 25;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(956, 450);
+            this.Controls.Add(this.txt_num);
+            this.Controls.Add(this.btn_searchnum);
+            this.Controls.Add(this.txt_search);
+            this.Controls.Add(this.btn_search);
             this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -353,6 +395,10 @@
         private System.Windows.Forms.RadioButton rb_cbe;
         private System.Windows.Forms.RadioButton rb_telebirr;
         private System.Windows.Forms.Button btn_logout;
+        private System.Windows.Forms.Button btn_search;
+        private System.Windows.Forms.TextBox txt_search;
+        private System.Windows.Forms.TextBox txt_num;
+        private System.Windows.Forms.Button btn_searchnum;
     }
 }
 

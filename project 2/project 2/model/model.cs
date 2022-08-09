@@ -22,15 +22,25 @@ namespace project_2.model
         public bool delivery { get; set; }
         public string payment { get; set; }
         public bool isavailable { get; set; }
+
+        
         public void save()
         {
            modList.Add(this);
            MessageBox.Show(" added succesfully");
         }
-        public List<mod> getallproduct() { 
+        public  static List<mod> getallproduct() { 
         
             return modList;
         
          }
+        public static mod searchbyname(string m)
+        {
+            return getallproduct().Find(mod => mod.objectname == m);
+        }
+        public static mod searchbynumber (string n)
+        {
+            return getallproduct().Find(mod => mod.inventorynumber == n);
+        }
     }
 }

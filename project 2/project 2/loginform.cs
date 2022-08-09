@@ -29,6 +29,8 @@ namespace project_2
                 Form1 form1 = new Form1(this);
                 form1.Show();
                 Hide();
+                newcontainer a = new newcontainer();
+                a.Show();
             }
             else
             {
@@ -39,7 +41,7 @@ namespace project_2
 
         }
 
-        private void btn_logout_Click(object sender, EventArgs e)
+        private void loginform_Load(object sender, EventArgs e)
         {
 
         }

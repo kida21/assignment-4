@@ -60,7 +60,6 @@
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(100, 20);
             this.txt_username.TabIndex = 2;
-            this.txt_username.Text = "ey";
             // 
             // txt_password
             // 
@@ -91,6 +90,7 @@
             this.Controls.Add(this.label1);
             this.Name = "loginform";
             this.Text = "loginform";
+            this.Load += new System.EventHandler(this.loginform_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

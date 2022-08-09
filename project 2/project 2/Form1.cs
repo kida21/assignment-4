@@ -153,5 +153,23 @@ namespace project_2
             f.Show();
 
         }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                mod p = mod.searchbyname(txt_search.Text);
+                MessageBox.Show($"{p.objectname}\n{p.count}\n{p.inventorynumber}\n{p.number}\n{p.price}\n{p.date}");
+            }catch(Exception d)
+            {
+                MessageBox.Show("no result found with this input");
+            }
+        }
+
+        private void btn_searchnum_Click(object sender, EventArgs e)
+        {
+            mod p = mod.searchbynumber(txt_num.Text);
+            MessageBox.Show($"{p.objectname}\n{p.number}\n{p.inventorynumber}\n{p.number}\n{p.price}\n{p.date}");
+        }
     }
 }

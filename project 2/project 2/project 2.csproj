@@ -59,6 +59,12 @@
       <DependentUpon>loginform.cs</DependentUpon>
     </Compile>
     <Compile Include="model\model.cs" />
+    <Compile Include="newcontainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newcontainer.Designer.cs">
+      <DependentUpon>newcontainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -66,6 +72,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loginform.resx">
       <DependentUpon>loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newcontainer.resx">
+      <DependentUpon>newcontainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
