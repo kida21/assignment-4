@@ -22,3 +22,5 @@ C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Deb
 C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Debug\project 2.pdb
 C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Debug\project_2.loginform.resources
 C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Debug\project_2.newcontainer.resources
+C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Debug\project_2.productcard.resources
+C:\Users\HP Elite BOOK\Documents\GitHub\assignment-4\project 2\project 2\obj\Debug\project_2.panel.resources

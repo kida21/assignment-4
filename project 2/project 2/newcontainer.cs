@@ -12,9 +12,11 @@ namespace project_2
 {
     public partial class newcontainer : Form
     {
+        //loginform loginform;
         public newcontainer()
         {
             InitializeComponent();
+            //this.loginform = loginform; 
         }
 
         private void addproductToolStripMenuItem_Click(object sender, EventArgs e)
@@ -28,6 +30,24 @@ namespace project_2
             q.MdiParent=this;
             q.Show();
             
-        } 
+        }
+
+        private void newcontainer_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void viewProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+
+           panel z = new panel();
+           
+            z.MdiParent = this;
+            z.Show();
+        }
     }
 }

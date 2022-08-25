@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace project_2.model
 {
-    internal class mod
+    public class mod
     {  
-        public static List<mod> modList = new List<mod>();
+        private static List<mod> modList = new List<mod>();
         public string number { get; set; }
         public string date { get; set; }
         public string inventorynumber { get; set; }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="detailpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detailpage.Designer.cs">
+      <DependentUpon>detailpage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,8 +71,23 @@
     <Compile Include="newcontainer.Designer.cs">
       <DependentUpon>newcontainer.cs</DependentUpon>
     </Compile>
+    <Compile Include="panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panel.Designer.cs">
+      <DependentUpon>panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productcard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="productcard.Designer.cs">
+      <DependentUpon>productcard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="detailpage.resx">
+      <DependentUpon>detailpage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +96,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="newcontainer.resx">
       <DependentUpon>newcontainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panel.resx">
+      <DependentUpon>panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productcard.resx">
+      <DependentUpon>productcard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
